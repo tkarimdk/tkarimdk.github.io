@@ -1,0 +1,12 @@
+node_modules/
+.next/
+dist/
+.env*
+!.env.example
+*.tsbuildinfo
+
+# Local visual QA artifacts and isolated browser profiles
+.qa/
+
+# Generated static website
+out/

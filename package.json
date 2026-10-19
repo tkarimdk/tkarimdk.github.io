@@ -1,0 +1,1 @@
+{"name":"tkarimdk-portfolio","private":true,"workspaces":["apps/*"],"scripts":{"dev":"concurrently -k -n API,WEB \"npm run dev -w apps/api\" \"npm run dev -w apps/web\"","build":"npm run build -w apps/api && npm run build -w apps/web","typecheck":"npm run typecheck --workspaces"},"devDependencies":{"concurrently":"^9.2.1","typescript":"^5.9.3","@types/node":"^22.19.0"}}

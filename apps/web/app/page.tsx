@@ -1,8 +1,8 @@
 import ProjectCover from "./project-cover";
 import Link from "next/link";
-import { ArrowUpRight, ArrowRight } from "lucide-react";
+import { ArrowUpRight, ArrowRight, Download } from "lucide-react";
 import { projects, projectSlug } from "./projects";
-import { toolkit } from "./site";
+import { toolkit, publicAsset } from "./site";
 export default function Home() {
   return (
     <div className="architect-home">
@@ -24,6 +24,13 @@ export default function Home() {
             <Link className="button" href="/work">
               Explore my work <ArrowUpRight size={18} />
             </Link>
+            <a
+              className="text-action"
+              href={publicAsset("/cv.pdf")}
+              download="Tanzimul-Karim-CV.pdf"
+            >
+              Download CV <Download size={16} />
+            </a>
             <Link className="text-action" href="/about">
               About me <ArrowRight size={16} />
             </Link>

@@ -1,4 +1,4 @@
-# Tanzimul Karim - Portfolio
+﻿# Tanzimul Karim - Portfolio
 
 A simple portfolio with a computer science feel: dark surfaces, mint accents, connected-node artwork, selected software projects, research and readable case studies. Built with Next.js, React and TypeScript. Graduation dates and degree details are not displayed.
 
@@ -10,7 +10,7 @@ A simple portfolio with a computer science feel: dark surfaces, mint accents, co
 
 The workflow reads the actual Pages URL and repository path automatically. Both `username.github.io` repositories and project repositories work; no repository name is hardcoded. Set a custom domain through GitHub's Pages settings if needed, then rerun the workflow.
 
-Setup follows the [GitHub Pages custom workflow documentation](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages). This workspace is not connected to a GitHub repository yet, so no upload or live deployment has been performed here.
+Setup follows the [GitHub Pages custom workflow documentation](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages). Source repository: https://github.com/tkarimdk/tkarimdk.github.io. The portfolio is configured to publish through GitHub Actions to https://tkarimdk.github.io.
 
 ## Edit content on GitHub
 
@@ -39,3 +39,4 @@ Next.js exports to `apps/web/out` with directory-style routes, a custom `404.htm
 These are for local development only; GitHub handles them automatically when publishing. Requires Node.js 22.12+ and npm. Install using `npm install`, run the frontend with `npm run dev -w apps/web`, and build with `npm run build -w apps/web`. After a build, `npm run typecheck` checks both apps. A static export is served as files rather than with `next start`.
 
 There is no lint configuration. Prettier is used for formatting. Current validation and browser-test details are recorded in `handout.md`.
+

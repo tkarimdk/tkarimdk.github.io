@@ -45,6 +45,16 @@ export default function About() {
             web applications, computer graphics, and low-level systems. I follow
             ideas through to working implementations, learning along the way.
           </p>
+          <h3>Haifa AI — Image &amp; Video Generation</h3>
+          <p>
+            Contributed to the image and video generation capabilities of Haifa
+            AI, collaborating with the team to build its generative AI tools.
+          </p>
+          <p>
+            <a href="https://www.haifa-ai.com/founder">
+              Meet the Haifa AI team <ArrowRight size={16} aria-hidden="true" />
+            </a>
+          </p>
           <div className="cv-area">
             {cvAvailable ? (
               <a

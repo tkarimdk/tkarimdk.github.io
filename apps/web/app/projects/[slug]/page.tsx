@@ -84,7 +84,9 @@ export default async function CaseStudy({
               ? "My role is Contributor. Specific responsibilities and individual contributions are not yet documented here."
               : p.visual === "road"
                 ? "This is my ongoing undergraduate thesis on road deterioration prediction. Detailed methods and findings will be added as the research progresses."
-                : `This ${p.course === "Personal project" ? "personal project" : p.course + " coursework"} brings together ${p.tags.join(", ")}.`}
+                : p.visual === "numpynet"
+                  ? "I am still learning neural-network fundamentals. This personal project helps me work through forward passes, gradients, and optimization step by step, with reproducible experiments and mathematical notes in the repository."
+                  : `This ${p.course === "Personal project" ? "personal project" : p.course + " coursework"} brings together ${p.tags.join(", ")}.`}
           </p>
         </section>
         <section>
@@ -114,9 +116,15 @@ export default async function CaseStudy({
         <div className="eyebrow">03 / EVIDENCE & LIMITATIONS</div>
         <h2>Source first. Claims second.</h2>
         <p>
-          Verified results, benchmarks and a detailed engineering retrospective
+          {p.visual === "numpynet" ? (
+            <>The repository includes numerical gradient checks, automated tests,
+            and reproducible training experiments. XOR results concern only four
+            training samples, and the multiclass demonstration uses synthetic
+            spiral data. I am continuing to learn; these experiments do not
+            establish performance on real datasets. </>
+          ) : <>Verified results, benchmarks and a detailed engineering retrospective
           have not been supplied for this portfolio. No numerical outcomes are
-          claimed.{" "}
+          claimed.{" "}</>}
           {source
             ? "The source repository is available for technical review."
             : "A repository link has not been supplied."}

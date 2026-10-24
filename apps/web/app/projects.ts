@@ -17,7 +17,7 @@
   label: string;
   course: string;
   featured: boolean;
-  status?: "Completed" | "Ongoing thesis";
+  status?: "Completed" | "Ongoing thesis" | "Learning in progress";
 };
 
 export const projects: Project[] = [
@@ -101,6 +101,26 @@ export const projects: Project[] = [
     label: "REALTIME LOCATION",
     course: "Personal project",
     featured: true,
+  },
+  {
+    name: "NumPyNet",
+    repo: "NumPyNet",
+    category: "Machine learning",
+    description:
+      "An ongoing learning project building neural networks from scratch with Python and NumPy. Exploring manual backpropagation, numerical gradient checks, and training behavior through XOR and synthetic multiclass experiments.",
+    tags: ["Python", "NumPy", "Neural networks"],
+    visual: "numpynet",
+    cover: {
+      src: "/projects/numpynet.png",
+      width: 1600,
+      height: 900,
+      alt: "NumPyNet cover: neural networks from scratch, with a connected network diagram and Python, NumPy, and learning labels.",
+      caption: "Project cover artwork supplied by Tanzimul Karim.",
+    },
+    label: "NEURAL NETWORKS FROM SCRATCH",
+    course: "Personal project",
+    status: "Learning in progress",
+    featured: false,
   },
   {
     name: "Demon Arena",
@@ -219,6 +239,15 @@ export const architecture: Record<string, { stages: string[]; note: string }> =
     parking: {
       stages: ["Authentication", "Vehicle records", "Parking logic", "Billing"],
       note: "Functional organization of the 16-bit x86 Assembly project. This is an explanatory overview, not a measured runtime trace.",
+    },
+    numpynet: {
+      stages: [
+        "Synthetic XOR / spiral data",
+        "Dense layers & activations",
+        "Manual backpropagation & SGD",
+        "Gradient checks & training diagnostics",
+      ],
+      note: "An educational NumPy implementation with explicit gradients, numerical gradient verification, and experiments comparing learning rates and training-stability techniques. XOR uses four training samples; the multiclass example uses synthetic spiral data with a separate validation set. These experiments support learning and do not establish real-world performance.",
     },
     arena: {
       stages: [

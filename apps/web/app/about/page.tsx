@@ -51,7 +51,7 @@ export default function About() {
             AI, collaborating with the team to build its generative AI tools.
           </p>
           <p>
-            <a href="https://www.haifa-ai.com/founder">
+            <a href="https://www.haifa-ai.com/">
               Meet the Haifa AI team <ArrowRight size={16} aria-hidden="true" />
             </a>
           </p>

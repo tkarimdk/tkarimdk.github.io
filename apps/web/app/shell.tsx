@@ -181,6 +181,9 @@ export default function Shell({ children }: { children: React.ReactNode }) {
         <a href={site.github} target="_blank" rel="noreferrer">
           GitHub <ArrowUpRight size={14} />
         </a>
+        <a href={site.linkedin} target="_blank" rel="noreferrer">
+          LinkedIn <ArrowUpRight size={14} />
+        </a>
       </footer>
       <dialog
         ref={dialog}

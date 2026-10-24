@@ -9,7 +9,7 @@ export const site = {
   },
   github: "https://github.com/tkarimdk",
   email: null,
-  linkedin: null,
+  linkedin: "https://www.linkedin.com/in/tanzimul-karim-0525a9282/",
   domain: process.env.NEXT_PUBLIC_SITE_URL || null,
 };
 export const navigation = [

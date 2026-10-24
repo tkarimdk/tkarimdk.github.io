@@ -106,7 +106,7 @@ main {
 .brand > .brand-name {
   display: block;
   font-family: "DM Sans", Arial, sans-serif;
-  font-size: clamp(17px, 2vw, 24px);
+  font-size: clamp(22px, 2.4vw, 30px);
   letter-spacing: -0.8px;
   font-weight: 650;
   line-height: 1.2;
@@ -114,13 +114,6 @@ main {
 }
 .brand-name span {
   color: var(--accent);
-}
-.brand > span:last-child {
-  font-family: var(--mono);
-  font-size: 8px;
-  letter-spacing: 1.1px;
-  line-height: 1.8;
-  color: var(--muted);
 }
 .site-header nav {
   display: flex;

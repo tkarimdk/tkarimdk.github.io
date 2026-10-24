@@ -36,7 +36,7 @@ export default function Layout({
               "@context": "https://schema.org",
               "@type": "Person",
               name: site.name,
-              sameAs: [site.github],
+              sameAs: [site.github, site.linkedin],
             }),
           }}
         />

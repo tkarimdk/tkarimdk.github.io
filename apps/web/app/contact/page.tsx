@@ -1,5 +1,5 @@
 import { site } from "../site";
-import { ArrowUpRight, Github } from "lucide-react";
+import { ArrowUpRight, Github, Linkedin } from "lucide-react";
 export const metadata = { title: "Contact" };
 export default function Contact() {
   return (
@@ -12,7 +12,7 @@ export default function Contact() {
       </h1>
       <p>
         Explore the code, take a closer look at a project, or connect with me
-        through GitHub.
+        through GitHub or LinkedIn.
       </p>
       <a
         className="contact-link"
@@ -24,6 +24,19 @@ export default function Contact() {
         <div>
           <span>FIND ME ON GITHUB</span>
           <h2>@tkarimdk</h2>
+        </div>
+        <ArrowUpRight size={34} />
+      </a>
+      <a
+        className="contact-link"
+        href={site.linkedin}
+        target="_blank"
+        rel="noreferrer"
+      >
+        <Linkedin size={30} />
+        <div>
+          <span>CONNECT ON LINKEDIN</span>
+          <h2>Tanzimul Karim</h2>
         </div>
         <ArrowUpRight size={34} />
       </a>
